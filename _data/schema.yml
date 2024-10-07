@@ -1,323 +1,323 @@
 # _data/schema.yml
 
 # Main Fields
-- name: id
-  type: string
+- field: id
+  expected_types: string
   example_label: Unique ID
   description: "This field is to assign a candidate a unique identifier that can be referenced in data exchange between organizations. For example: recDYXHDhyY1235"
   required: yes
   notes: ''
   
-- name: given_names
-  type: string
+- field: given_names
+  expected_types: string
   example_label: Given name(s)
   description: "This field is to collect a candidate’s given name(s). For example: Lyra Michelle"
   required: no
   notes: ''
 
-- name: family_names
-  type: string
+- field: family_names
+  expected_types: string
   example_label: Family name(s)
   description: "This field is to collect a candidate’s family name(s). For example: Hashimi"
   required: no
   notes: ''
 
-- name: meta_source
-  type: string
+- field: meta_source
+  expected_types: string
   example_label: '-'
   description: "This field is marked as 'meta'. It is used to identify which organization this data came from. For example: TalentLift or Talent Beyond Boundaries."
   required: yes
   notes: ''
 
-- name: gender
-  type: enum
+- field: gender
+  expected_types: enum
   example_label: Gender
   description: "This field is to collect a candidate’s gender. It is a string to allow for maximum flexibility and can have enumerated types. For example: Male, Female, Other."
   required: no
   notes: ''
 
-- name: gender_other
-  type: string
+- field: gender_other
+  expected_types: string
   example_label: Gender
   description: "If the user selects 'Other' from the enumerated list, the value can be saved here."
   required: no
   notes: ''
 
-- name: date_of_birth
-  type: date
+- field: date_of_birth
+  expected_types: date
   example_label: Date of birth
   description: "This field is to collect a candidate’s date of birth. Format: yyyy-mm-dd. For example: 1989-04-06"
   required: no
   notes: ''
 
-- name: marital_status
-  type: enum
+- field: marital_status
+  expected_types: enum
   example_label: Marital status
   description: "This field is to collect a candidate’s marital status. It can have enumerated types, like Single, Married, and others."
   required: no
   notes: ''
 
-- name: marital_status_other
-  type: string
+- field: marital_status_other
+  expected_types: string
   example_label: Marital status
   description: "If the user selects 'Other' from the enumerated list, the value can be saved here."
   required: no
   notes: ''
 
-- name: email
-  type: string
+- field: email
+  expected_types: string
   example_label: Email
   description: "This field is to collect a candidate’s email. For example: name@surname.com"
   required: no
   notes: ''
 
-- name: phone
-  type: string
+- field: phone
+  expected_types: string
   example_label: Phone
   description: "This field is to collect a candidate’s phone number, including country codes if applicable. For example: +17774443333"
   required: no
   notes: ''
 
-- name: phone_type
-  type: enum
+- field: phone_type
+  expected_types: enum
   example_label: Type of phone number
   description: "This field is to collect the type of phone number provided (e.g., cell, fax, landline, WhatsApp, Signal, Telegram)."
   required: no
   notes: ''
 
-- name: phone_type_other
-  type: string
+- field: phone_type_other
+  expected_types: string
   example_label: Type of phone number
   description: "If the user selects 'Other' from the enumerated list, the value can be saved here."
   required: no
   notes: ''
 
-- name: country_of_origin
-  type: country (ISO 3166)
+- field: country_of_origin
+  expected_types: country (ISO 3166)
   example_label: Country of origin
   description: "This field is to collect a candidate’s country of origin using ISO 3166 codes. For example: Panama or 'PA'."
   required: yes
   notes: "All members agreed to use ISO 3166"
 
-- name: country_of_residence
-  type: country (ISO 3166)
+- field: country_of_residence
+  expected_types: country (ISO 3166)
   example_label: Country of residence
   description: "This field is to collect a candidate’s country of residence using ISO 3166 codes. For example: Ecuador or 'EC'."
   required: yes
   notes: "All members agreed to use ISO 3166"
 
-- name: country_of_citizenship
-  type: country (ISO 3166)
+- field: country_of_citizenship
+  expected_types: country (ISO 3166)
   example_label: Country of citizenship
   description: "This field is to collect a candidate’s country of citizenship using ISO 3166 codes. For example: Colombia or 'CO'."
   required: no
   notes: "All members agreed to use ISO 3166 (ISO 3166-1 alpha-3) as it has a stateless option."
 
-- name: preferred_name
-  type: string
+- field: preferred_name
+  expected_types: string
   example_label: Preferred name
   description: "This field is for collecting a candidate’s preferred name. For example: Omar"
   required: no
   notes: ''
 
-- name: main_occupation
-  type: string
+- field: main_occupation
+  expected_types: string
   example_label: Main occupation
   description: "What is the candidate’s professional identity?"
   required: yes
   notes: ''
 
-- name: self_identified_as_refugee
-  type: boolean
+- field: self_identified_as_refugee
+  expected_types: boolean
   example_label: Self-identified as a refugee?
   description: "Indicates if a candidate identifies themselves as a refugee. True or False."
   required: no
   notes: ''
 
-- name: interested_in_relocation
-  type: boolean
+- field: interested_in_relocation
+  expected_types: boolean
   example_label: Interested in relocation?
   description: "Indicates if the candidate is interested in relocation. True or False."
   required: no
   notes: ''
 
-- name: external_profile
-  type: string
+- field: external_profile
+  expected_types: string
   example_label: External profile
   description: "A candidate’s external link such as LinkedIn, blog, or CV."
   required: no
   notes: ''
 
-- name: passport_expiry
-  type: date
+- field: passport_expiry
+  expected_types: date
   example_label: Passport expiry date
   description: "The expiry date of the candidate’s passport. Format: yyyy-mm-dd. For example: 2028-04-06"
   required: no
   notes: ''
 
-- name: current_legal_status
-  type: object
+- field: current_legal_status
+  expected_types: object
   example_label: Current legal status
   description: "Collects the candidate’s current legal status in their country of residence."
   required: no
   notes: ''
 
-- name: additional_citizenships
-  type: country (ISO 3166)
+- field: additional_citizenships
+  expected_types: country (ISO 3166)
   example_label: Additional citizenships
   description: "Any additional citizenship(s) the candidate holds. For example: Brazil"
   required: no
   notes: ''
 
-- name: other_identifier
-  type: string
+- field: other_identifier
+  expected_types: string
   example_label: Other identifier
   description: "Additional identifiers about the candidate (e.g., national, ethnic, religious)."
   required: no
   notes: ''
 
-- name: current_town_city
-  type: string
+- field: current_town_city
+  expected_types: string
   example_label: Current town/city
   description: "The current town or city where the candidate lives."
   required: no
   notes: ''
 
-- name: citizenship_status_of_spouse_dependents
-  type: string
+- field: citizenship_status_of_spouse_dependents
+  expected_types: string
   example_label: Citizenship of spouse/dependents
   description: "The citizenship status of the candidate's spouse and dependents."
   required: no
   notes: "To assess durable solutions for the candidate and their immediate family."
 
-- name: joint_guardianship_custody_of_children
-  type: string
+- field: joint_guardianship_custody_of_children
+  expected_types: string
   example_label: Joint custody of children
   description: "Information about any joint custody or guardianship arrangements the candidate may have."
   required: no
   notes: ''
 
-- name: open_jobs_in_rural_area
-  type: boolean
+- field: open_jobs_in_rural_area
+  expected_types: boolean
   example_label: Willing to work in rural areas?
   description: "Indicates if the candidate is willing to accept jobs in rural areas. True or False."
   required: no
   notes: ''
 
-- name: travel_without_non_immediate_family
-  type: boolean
+- field: travel_without_non_immediate_family
+  expected_types: boolean
   example_label: Willing to travel without non-immediate family?
   description: "Indicates if the candidate is willing to travel only with immediate family members. True or False."
   required: no
   notes: "For example, traveling without siblings or parents."
 
-- name: notes_regarding_intl_recruitment
-  type: string
+- field: notes_regarding_intl_recruitment
+  expected_types: string
   example_label: Notes on international recruitment
   description: "Additional information about the candidate’s international recruitment."
   required: no
   notes: ''
 
-- name: refused_visa_to_any_country
-  type: string
+- field: refused_visa_to_any_country
+  expected_types: string
   example_label: Visa refusals
   description: "Whether the candidate or dependents have ever been refused a visa to any country."
   required: no
   notes: "Admissibility questions from the Canadian government."
 
-- name: had_military_service
-  type: string
+- field: had_military_service
+  expected_types: string
   example_label: Military service
   description: "Whether the candidate or dependents have ever completed military service."
   required: no
   notes: "Admissibility questions from the Canadian government."
 
-- name: arrested_charged_criminal_offence
-  type: string
+- field: arrested_charged_criminal_offence
+  expected_types: string
   example_label: Criminal offences
   description: "Whether the candidate or dependents have ever been arrested or charged with a criminal offence."
   required: no
   notes: "Admissibility questions from the Canadian government."
 
-- name: detained_incarcerated_jailed
-  type: string
+- field: detained_incarcerated_jailed
+  expected_types: string
   example_label: Detainment history
   description: "Whether the candidate or dependents have ever been detained, incarcerated, or jailed."
   required: no
   notes: "Admissibility questions from the Canadian government."
 
-- name: participated_armed_conflict
-  type: string
+- field: participated_armed_conflict
+  expected_types: string
   example_label: Participation in armed conflict
   description: "Whether the candidate or dependents have ever been part of an armed conflict or armed group."
   required: no
   notes: "Admissibility questions from the Canadian government."
 
-- name: serious_health_condition
-  type: string
+- field: serious_health_condition
+  expected_types: string
   example_label: Serious health conditions
   description: "Whether the candidate or dependents currently have a serious health condition."
   required: no
   notes: "Admissibility questions from the Canadian government."
 
-- name: secondary_occupation
-  type: string
+- field: secondary_occupation
+  expected_types: string
   example_label: Secondary occupation
   description: "Any secondary occupation the candidate has."
   required: no
   notes: ''
 
-- name: soft_skills
-  type: string
+- field: soft_skills
+  expected_types: string
   example_label: Soft skills
   description: "The candidate’s soft skills that strengthen their employment profile."
   required: no
   notes: ''
 
-- name: date_of_arrival
-  type: date
+- field: date_of_arrival
+  expected_types: date
   example_label: Date of arrival in host country
   description: "The date the candidate arrived in their host country. Format: yyyy-mm-dd."
   required: no
   notes: ''
 
-- name: unhcr_registration
-  type: string
+- field: unhcr_registration
+  expected_types: string
   example_label: UNHCR/UNRWA registration
   description: "Information about the candidate's registration status with UNHCR or UNRWA."
   required: no
   notes: ''
 
-- name: education
-  type: object
+- field: education
+  expected_types: object
   example_label: Education
   description: "Educational background of the candidate."
   required: no
   notes: "See Education object schema."
 
-- name: language
-  type: object
+- field: language
+  expected_types: object
   example_label: Languages
   description: "Languages the candidate can speak, read, or write."
   required: no
   notes: "See Language object schema."
 
-- name: work
-  type: object
+- field: work
+  expected_types: object
   example_label: Work experience
   description: "Work experience details of the candidate."
   required: yes
   notes: "See Work object schema."
 
-- name: created_at
-  type: datetime
+- field: created_at
+  expected_types: datetime
   example_label: Created at
   description: "Timestamp when the record was created."
   required: yes
   notes: ''
 
-- name: updated_at
-  type: datetime
+- field: updated_at
+  expected_types: datetime
   example_label: Updated at
   description: "Timestamp when the record was last updated."
   required: no
