@@ -1,0 +1,19 @@
+- name: id
+  type: String
+  description: ""
+- name: given_names
+  type: String
+  description: ""
+- name: family_names
+  type: String
+  description: ""
+- name: meta_source
+  type: String
+  description: ""
+- name: gender
+  type: String
+  description: ""
+- name: date_of_birth
+  type: Date
+  description: ""
+# ... Add the rest of the fields similarly

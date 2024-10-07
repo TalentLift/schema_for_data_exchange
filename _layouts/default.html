@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - Schema for Data Exchange</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Simple CSS to hide sections */
+    .hidden { display: none; }
+  </style>
+</head>
+<body class="bg-gray-100">
+  {% include header.html %}
+  <div class="container p-4 mx-auto mt-8 max-w-4xl">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</body>
+</html>

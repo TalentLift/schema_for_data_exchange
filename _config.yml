@@ -1,0 +1,19 @@
+title: Schema for Data Exchange
+description: Collaborative community activity to create a standard data schema.
+baseurl: "" # If the site is published in a subdirectory, add it here.
+url: "" # The base hostname & protocol for your site.
+
+# Include the data directory
+include:
+  - _data
+
+# Exclude unnecessary files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins (if needed)
+plugins:
+#  - jekyll-feed
