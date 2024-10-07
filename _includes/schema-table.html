@@ -1,18 +1,34 @@
+<!-- _includes/schema-table.html -->
 <table class="table-auto w-full">
     <thead>
       <tr style="background-color: #666;" class="text-white">
         <th class="px-4 py-2">Field</th>
         <th class="px-4 py-2">Type</th>
+        <th class="px-4 py-2">Example Label</th>
         <th class="px-4 py-2">Description</th>
+        <th class="px-4 py-2">Required</th>
+        <th class="px-4 py-2">Notes</th>
       </tr>
     </thead>
     <tbody class="bg-white">
       {% for field in site.data.schema %}
-      <tr>
-        <td class="border px-4 py-2">{{ field.name }}</td>
-        <td class="border px-4 py-2">{{ field.type }}</td>
-        <td class="border px-4 py-2">{{ field.description }}</td>
-      </tr>
+        <tr>
+          <td class="border px-4 py-2">{{ field.name }}</td>
+          <td class="border px-4 py-2">
+            {{ field.type }}
+            {% if field.type == 'object' or field.type == 'list' %}
+              <ul class="list-disc pl-5">
+                {% for subfield in field.fields %}
+                  <li>{{ subfield.name }} ({{ subfield.type }})</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </td>
+          <td class="border px-4 py-2">{{ field.example_label }}</td>
+          <td class="border px-4 py-2">{{ field.description }}</td>
+          <td class="border px-4 py-2">{{ field.required }}</td>
+          <td class="border px-4 py-2">{{ field.notes }}</td>
+        </tr>
       {% endfor %}
     </tbody>
   </table>
