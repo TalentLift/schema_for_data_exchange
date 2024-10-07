@@ -1,6 +1,6 @@
 title: Schema for Data Exchange
 description: Collaborative community activity to create a standard data schema.
-baseurl: "" # If the site is published in a subdirectory, add it here.
+baseurl: "schema_for_data_exchange" # If the site is published in a subdirectory, add it here.
 url: "" # The base hostname & protocol for your site.
 
 # Include the data directory
