@@ -462,38 +462,56 @@
       required: no
       notes: ''
 
-# Enumerated Lists (Example for Gender)
-# You can include enumerated lists in a separate data file if needed
+# _data/schema.yml
 
-gender_enum:
-  - Male
-  - Female
-  - Non-binary
-  - Other
-  - Prefer not to say
+- name: gender
+  type: enum
+  example_label: Gender
+  description: "This field is to collect a candidate’s gender."
+  required: no
+  notes: ''
+  enum_values:
+    - Male
+    - Female
+    - Non-binary
+    - Other
+    - Prefer not to say
 
-marital_status_enum:
-  - Single
-  - Married
-  - Divorced
-  - Widowed
-  - Separated
-  - In civil union
-  - In domestic partnership
-  - Common law
-  - Engaged
-  - Complicated
-  - Other
-  - Prefer not to say
+- name: marital_status
+  type: enum
+  example_label: Marital status
+  description: "This field is to collect a candidate’s marital status."
+  required: no
+  notes: ''
+  enum_values:
+    - Single
+    - Married
+    - Divorced
+    - Widowed
+    - Separated
+    - In civil union
+    - In domestic partnership
+    - Common law
+    - Engaged
+    - Complicated
+    - Other
+    - Prefer not to say
 
-phone_type_enum:
-  - Mobile
-  - Landline
-  - Fax
-  - VoIP
-  - WhatsApp
-  - Telegram
-  - Signal
-  - WeChat
-  - Skype
-  - Other
+- name: phone_type
+  type: enum
+  example_label: Type of phone number
+  description: "This field is to collect the type of phone number provided."
+  required: no
+  notes: ''
+  enum_values:
+    - Mobile
+    - Landline
+    - Fax
+    - VoIP
+    - WhatsApp
+    - Telegram
+    - Signal
+    - WeChat
+    - Skype
+    - Other
+

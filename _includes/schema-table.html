@@ -8,6 +8,7 @@
         <th class="px-4 py-2">Description</th>
         <th class="px-4 py-2">Required</th>
         <th class="px-4 py-2">Notes</th>
+        <th class="px-4 py-2">Enumerated Values</th> <!-- New Column -->
       </tr>
     </thead>
     <tbody class="bg-white">
@@ -17,17 +18,24 @@
           <td class="border px-4 py-2">
             {{ field.type }}
             {% if field.type == 'object' or field.type == 'list' %}
-              <ul class="list-disc pl-5">
-                {% for subfield in field.fields %}
-                  <li>{{ subfield.name }} ({{ subfield.type }})</li>
-                {% endfor %}
-              </ul>
+              <!-- Handle nested fields if necessary -->
             {% endif %}
           </td>
           <td class="border px-4 py-2">{{ field.example_label }}</td>
           <td class="border px-4 py-2">{{ field.description }}</td>
           <td class="border px-4 py-2">{{ field.required }}</td>
           <td class="border px-4 py-2">{{ field.notes }}</td>
+          <td class="border px-4 py-2">
+            {% if field.enum_values %}
+              <ul class="list-disc pl-5">
+                {% for value in field.enum_values %}
+                  <li>{{ value }}</li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              N/A
+            {% endif %}
+          </td>
         </tr>
       {% endfor %}
     </tbody>
