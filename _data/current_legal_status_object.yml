@@ -1,0 +1,15 @@
+# _data/current_legal_status_object.yml
+
+- field: status
+  expected_types: string
+  example_label: What is your current legal status?
+  description: "Current legal status of the candidate. E.g., permanent resident, recognized refugee."
+  required: yes
+  notes: "See full list for options."
+
+- field: notes
+  expected_types: string
+  example_label: Additional details
+  description: "Expiry dates, registration numbers, or other details."
+  required: no
+  notes: ''

@@ -12,32 +12,15 @@
       </tr>
     </thead>
     <tbody class="bg-white">
-      {% for field in site.data.schema %}
-        <tr>
-          <td class="border px-4 py-2">{{ field.name }}</td>
-          <td class="border px-4 py-2">
-            {{ field.type }}
-            {% if field.type == 'object' or field.type == 'list' %}
-              <!-- Handle nested fields if necessary -->
-            {% endif %}
-          </td>
-          <td class="border px-4 py-2">{{ field.example_label }}</td>
-          <td class="border px-4 py-2">{{ field.description }}</td>
-          <td class="border px-4 py-2">{{ field.required }}</td>
-          <td class="border px-4 py-2">{{ field.notes }}</td>
-          <td class="border px-4 py-2">
-            {% if field.enum_values %}
-              <ul class="list-disc pl-5">
-                {% for value in field.enum_values %}
-                  <li>{{ value }}</li>
-                {% endfor %}
-              </ul>
-            {% else %}
-              N/A
-            {% endif %}
-          </td>
-        </tr>
+      {% for item in site.data.schema %}
+      <tr>
+        <td class="border px-4 py-2">{{ item.field }}</td>
+        <td class="border px-4 py-2">{{ item.expected_types }}</td>
+        <td class="border px-4 py-2">{{ item.example_label }}</td>
+        <td class="border px-4 py-2">{{ item.description }}</td>
+        <td class="border px-4 py-2">{{ item.required }}</td>
+        <td class="border px-4 py-2">{{ item.notes }}</td>
+      </tr>
       {% endfor %}
     </tbody>
   </table>
-  

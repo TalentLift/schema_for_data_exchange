@@ -1,0 +1,21 @@
+# _data/gender_enum.yml
+
+- field: Male
+  description: ''
+  notes: ''
+
+- field: Female
+  description: ''
+  notes: ''
+
+- field: Non-binary
+  description: ''
+  notes: ''
+
+- field: Other
+  description: ''
+  notes: ''
+
+- field: Prefer not to say
+  description: ''
+  notes: ''

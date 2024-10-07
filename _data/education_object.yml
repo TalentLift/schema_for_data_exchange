@@ -1,0 +1,36 @@
+# _data/education_object.yml
+
+- field: from
+  expected_types: date
+  example_label: When did you start this program?
+  description: "Collects the date the candidate started their education. Format: yyyy-mm-dd. E.g., 2021-04-16"
+  required: no
+  notes: ''
+
+- field: to
+  expected_types: date
+  example_label: When did you stop this program?
+  description: "Collects the date the candidate finished their education. Format: yyyy-mm-dd. E.g., 2021-04-16"
+  required: no
+  notes: ''
+
+- field: institution
+  expected_types: string
+  example_label: What institution did you attend?
+  description: "Name of the institution attended. E.g., Kardan University"
+  required: no
+  notes: ''
+
+- field: degree_or_program_name
+  expected_types: string
+  example_label: What was your degree or program name?
+  description: "Degree earned or program name. E.g., Bachelor's degree"
+  required: no
+  notes: ''
+
+- field: level
+  expected_types: string or enum
+  example_label: What was the level of this credential?
+  description: "Information about the credential level. E.g., Doctoral degree"
+  required: yes
+  notes: "Members agreed to adopt ISCED as a base list."

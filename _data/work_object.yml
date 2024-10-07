@@ -1,0 +1,50 @@
+# _data/work_object.yml
+
+- field: from
+  expected_types: date
+  example_label: When did you start this employment?
+  description: "Date started employment. Format: yyyy-mm-dd. E.g., 2022-04-16"
+  required: no
+  notes: ''
+
+- field: to
+  expected_types: date
+  example_label: When did you stop this employment?
+  description: "Date ended employment. Format: yyyy-mm-dd. E.g., 2023-04-16"
+  required: no
+  notes: ''
+
+- field: employer
+  expected_types: string
+  example_label: Who is the employer?
+  description: "Name of the employer. E.g., TalentLift"
+  required: no
+  notes: ''
+
+- field: position
+  expected_types: string
+  example_label: What is the position?
+  description: "Position held. E.g., Marketing Officer"
+  required: yes
+  notes: ''
+
+- field: responsibilities
+  expected_types: string
+  example_label: What were your responsibilities?
+  description: "Responsibilities in the position."
+  required: no
+  notes: ''
+
+- field: hours_per_week
+  expected_types: number
+  example_label: How many hours did you work?
+  description: "Number of hours worked per week. E.g., 21"
+  required: no
+  notes: ''
+
+- field: paid
+  expected_types: boolean
+  example_label: Were you paid for this work?
+  description: "Indicates if the job was paid. True or False."
+  required: no
+  notes: ''

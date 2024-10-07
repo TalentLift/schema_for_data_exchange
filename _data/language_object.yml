@@ -1,0 +1,22 @@
+# _data/language_object.yml
+
+- field: language
+  expected_types: language (ISO 639)
+  example_label: Language
+  description: "Language the candidate has ability in. Value from ISO 639 codes."
+  required: yes
+  notes: ''
+
+- field: level
+  expected_types: enum
+  example_label: What is your overall language ability?
+  description: "Level of language proficiency. E.g., advanced"
+  required: no
+  notes: "Members agreed to adopt CEFR, ACTFL, or CLB as standard lists."
+
+- field: language_details
+  expected_types: string
+  example_label: Any other comments about this language ability?
+  description: "Additional language-related information. E.g., 'Can speak but not read or write.'"
+  required: no
+  notes: ''

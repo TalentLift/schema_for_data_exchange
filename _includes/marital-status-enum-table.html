@@ -1,0 +1,20 @@
+<!-- _includes/marital-status-enum-table.html -->
+<h3 class="text-lg font-semibold mt-8">Marital Status Enum List</h3>
+<table class="table-auto w-full mt-4">
+  <thead>
+    <tr style="background-color: #666;" class="text-white">
+      <th class="px-4 py-2">Value</th>
+      <th class="px-4 py-2">Description</th>
+      <th class="px-4 py-2">Notes</th>
+    </tr>
+  </thead>
+  <tbody class="bg-white">
+    {% for item in site.data.gender_enum %}
+      <tr>
+        <td class="border px-4 py-2">{{ item.field }}</td>
+        <td class="border px-4 py-2">{{ item.description }}</td>
+        <td class="border px-4 py-2">{{ item.notes }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
