@@ -1,26 +1,28 @@
 <!-- _includes/education-table.html -->
 <h3 class="text-lg font-semibold mt-8">Education Object</h3>
-<table class="table-auto w-full mt-4">
-  <thead>
-    <tr style="background-color: #666;" class="text-white">
-      <th class="px-4 py-2">Field</th>
-      <th class="px-4 py-2">Expected Types</th>
-      <th class="px-4 py-2">Example Label</th>
-      <th class="px-4 py-2">Description</th>
-      <th class="px-4 py-2">Required</th>
-      <th class="px-4 py-2">Notes</th>
-    </tr>
-  </thead>
-  <tbody class="bg-white">
-    {% for item in site.data.education_object %}
-      <tr>
-        <td class="border px-4 py-2">{{ item.field }}</td>
-        <td class="border px-4 py-2">{{ item.expected_types }}</td>
-        <td class="border px-4 py-2">{{ item.example_label }}</td>
-        <td class="border px-4 py-2">{{ item.description }}</td>
-        <td class="border px-4 py-2">{{ item.required }}</td>
-        <td class="border px-4 py-2">{{ item.notes }}</td>
+<div class="overflow-x-auto">
+  <table class="table-auto w-full mt-4 text-left border-collapse">
+    <thead>
+      <tr class="bg-gray-800 text-white">
+        <th class="px-4 py-3 border">Field</th>
+        <th class="px-4 py-3 border">Expected Types</th>
+        <th class="px-4 py-3 border">Example Label</th>
+        <th class="px-4 py-3 border">Description</th>
+        <th class="px-4 py-3 border">Required</th>
+        <th class="px-4 py-3 border">Notes</th>
       </tr>
-    {% endfor %}
-  </tbody>
-</table>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      {% for item in site.data.education_object %}
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">{{ item.field }}</td>
+          <td class="border px-4 py-2">{{ item.expected_types }}</td>
+          <td class="border px-4 py-2">{{ item.example_label }}</td>
+          <td class="border px-4 py-2">{{ item.description }}</td>
+          <td class="border px-4 py-2">{{ item.required }}</td>
+          <td class="border px-4 py-2">{{ item.notes }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
