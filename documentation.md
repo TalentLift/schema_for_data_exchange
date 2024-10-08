@@ -20,7 +20,7 @@ permalink: /documentation/
       <li><a href="#implementation-guide" class="text-blue-600 hover:text-blue-800">Implementation Guide</a></li>
       <li><a href="#database-setup" class="text-blue-600 hover:text-blue-800">Setting Up a Database</a></li>
       <li><a href="#api-integration" class="text-blue-600 hover:text-blue-800">API Integration</a></li>
-      <li><a href="#privacy-security" class="text-blue-600 hover:text-blue-800">Privacy and Security</a></li>
+      <li><a href="#privacy" class="text-blue-600 hover:text-blue-800">Privacy</a></li>
       <li><a href="#community-contributions" class="text-blue-600 hover:text-blue-800">Community Contributions</a></li>
       <li><a href="#governance" class="text-blue-600 hover:text-blue-800">Governance and Change Management</a></li>
       <li><a href="#faq" class="text-blue-600 hover:text-blue-800">FAQ</a></li>
@@ -79,7 +79,7 @@ permalink: /documentation/
   </div>
 
   <!-- Privacy Section -->
-  <div id="privacy-security" class="mt-12">
+  <div id="privacy" class="mt-12">
     <h2 class="text-xl font-semibold text-gray-800">Privacy</h2>
     <p class="mt-4 text-gray-600">
       Protecting the privacy of candidate data is a fundamental priority. The schema is designed to facilitate anonymized data sharing to ensure that sensitive information is handled responsibly. Each field in the schema is marked with a <strong>required</strong> attribute set to either <code>true</code> or <code>false</code>.
