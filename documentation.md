@@ -65,7 +65,7 @@ permalink: /documentation/
     </p>
     <ul class="mt-4 list-disc list-inside text-gray-600">
       <li>Study the schema file: <a href="{{ '/schema/' | relative_url }}" class="text-blue-600 hover:text-blue-800">Schema File</a></li>
-      <li>Convert it to YAML file for NoSQL setups</li>
+      <li>Convert it to SQL or YAML for your various database setup needs</li>
       <li>Set up validation rules to ensure data integrity.</li>
     </ul>
   </div>
