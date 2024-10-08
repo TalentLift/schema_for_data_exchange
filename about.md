@@ -6,7 +6,7 @@ permalink: /about/
 
 <div class="max-w-4xl mx-auto pb-12 px-6">
 
-  <h2 class="text-2xl font-bold text-gray-800">About</h2>
+  <h2 class="text-2xl font-bold text-gray-800">About Us</h2>
   <p class="mt-4 text-gray-600">
     The Data Exchange Framework is a collaborative effort led by a dedicated working group composed of partners including UNHCR, HIAS, Skillab, Talent Beyond Boundaries, and many other organizations. Our shared mission is to develop and promote a standard data schema for collecting and managing data related to skills-based complementary pathways.
   </p>
