@@ -42,6 +42,7 @@ permalink: /about/
     <li><strong>HIAS</strong></li>
     <li><strong>Skillab</strong></li>
     <li><strong>Talent Beyond Boundaries</strong></li>
+    <li><strong>TalentLift Canada</strong></li>
     <li>And many other dedicated organizations and individuals.</li>
   </ul>
 
