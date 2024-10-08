@@ -4,7 +4,7 @@ title: Schema
 permalink: /schema/
 ---
 
-<h2 class="text-xl font-bold">Schema</h2>
+<h2 class="text-xl font-bold">Candidate Schema</h2>
 <div class="overflow-x-auto">
   {% include schema-table.html %}
 </div>
