@@ -4,7 +4,7 @@ title: About Us
 permalink: /about/
 ---
 
-<div class="max-w-4xl mx-auto py-12 px-6">
+<div class="max-w-4xl mx-auto pb-12 px-6">
 
   <h2 class="text-2xl font-bold text-gray-800">About Us</h2>
   <p class="mt-4 text-gray-600">

@@ -4,7 +4,7 @@ title: Documentation
 permalink: /documentation/
 ---
 
-<div class="max-w-4xl mx-auto py-12 px-6">
+<div class="max-w-4xl mx-auto pb-12 px-6">
 
   <!-- Header Section -->
   <h1 class="text-2xl font-bold text-gray-800">Data Exchange Framework Documentation</h1>
