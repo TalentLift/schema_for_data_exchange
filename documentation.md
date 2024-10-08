@@ -22,6 +22,7 @@ permalink: /documentation/
       <li><a href="#api-integration" class="text-blue-600 hover:text-blue-800">API Integration</a></li>
       <li><a href="#privacy-security" class="text-blue-600 hover:text-blue-800">Privacy and Security</a></li>
       <li><a href="#community-contributions" class="text-blue-600 hover:text-blue-800">Community Contributions</a></li>
+      <li><a href="#governance" class="text-blue-600 hover:text-blue-800">Governance and Change Management</a></li>
       <li><a href="#faq" class="text-blue-600 hover:text-blue-800">FAQ</a></li>
     </ul>
   </div>
@@ -75,9 +76,6 @@ permalink: /documentation/
     <p class="mt-4 text-gray-600">
       Implementing the schema as part of an API allows for real-time data exchange and synchronization between systems. Use the schema as a standardized interface for receiving and sending candidate data.
     </p>
-    <p class="mt-4 text-gray-600">
-      For implementation, ensure your API endpoints follow the same field definitions, data types, and validation rules as specified in the schema.
-    </p>
   </div>
 
   <!-- Privacy and Security Section -->
@@ -93,6 +91,17 @@ permalink: /documentation/
     <h2 class="text-xl font-semibold text-gray-800">Community Contributions</h2>
     <p class="mt-4 text-gray-600">
       This schema is a collaborative product, and we welcome contributions from the community. If you have suggestions for improvement or wish to participate in the working group’s efforts, feel free to reach out to us.
+    </p>
+  </div>
+
+  <!-- Governance Section -->
+  <div id="governance" class="mt-12">
+    <h2 class="text-xl font-semibold text-gray-800">Governance and Change Management</h2>
+    <p class="mt-4 text-gray-600">
+      The governance of the Data Exchange Framework is managed through a structured change management process that ensures all stakeholders have a say in major updates. This process is led by the chair and co-chair of the working group and involves member discussions, decision-making, and voting on changes.
+    </p>
+    <p class="mt-4">
+      For detailed information on the governance structure and change request process, visit the <a href="{{ '/governance/' | relative_url }}" class="text-blue-600 hover:text-blue-800">Governance and Change Management Page</a>.
     </p>
   </div>
 
