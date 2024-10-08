@@ -78,11 +78,17 @@ permalink: /documentation/
     </p>
   </div>
 
-  <!-- Privacy and Security Section -->
+  <!-- Privacy Section -->
   <div id="privacy-security" class="mt-12">
-    <h2 class="text-xl font-semibold text-gray-800">Privacy and Security</h2>
+    <h2 class="text-xl font-semibold text-gray-800">Privacy</h2>
     <p class="mt-4 text-gray-600">
-      Protecting the privacy and security of candidate data is of utmost importance. Follow industry best practices, including data encryption, role-based access controls, and anonymized data sharing when appropriate.
+      Protecting the privacy of candidate data is a fundamental priority. The schema is designed to facilitate anonymized data sharing to ensure that sensitive information is handled responsibly. Each field in the schema is marked with a <strong>required</strong> attribute set to either <code>true</code> or <code>false</code>.
+    </p>
+    <p class="mt-4 text-gray-600">
+      Fields marked as <code>true</code> are essential for anonymized data sharing, meaning that they contain only non-identifiable information critical for matching and reporting purposes. On the other hand, fields marked as <code>false</code> are optional and may include identifiable data, which should only be shared with explicit consent and under appropriate data privacy guidelines.
+    </p>
+    <p class="mt-4 text-gray-600">
+      This approach enables organizations to use the schema flexibly, sharing only anonymized information by including fields marked as <code>true</code> while maintaining the privacy and security of sensitive candidate data.
     </p>
   </div>
 
