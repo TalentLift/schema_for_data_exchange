@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic Metadata -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Schema for Data Exchange is a collaborative effort to create, maintain, and promote a standard data schema to support skills-based complementary pathways for displaced communities.">
+  <meta name="author" content="Schema Working Group">
+  
+  <!-- Title Configuration -->
   <title>{{ page.title }} - Schema for Data Exchange</title>
+  
+  <!-- Tailwind CSS Integration -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- Favicon (Optional) -->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Additional Styles -->
   <style>
-    /* Simple CSS to hide sections */
-    .hidden { display: none; }
+    .hidden { display: none; }  /* Utility class to hide sections */
   </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-sans leading-relaxed">
+
+  <!-- Header Section -->
   {% include header.html %}
-  <div class="container p-4 mx-auto mt-8 max-w-4xl">
-    {{ content }}
+  
+  <!-- Main Container -->
+  <div class="container p-6 mx-auto mt-8 max-w-5xl">
+    
+    <!-- Title Section -->
+    <header class="text-center my-12">
+      <h1 class="text-3xl font-bold text-gray-800">{{ page.title }}</h1>
+      <p class="text-lg text-gray-600 mt-4">{{ page.description }}</p>
+    </header>
+    
+    <!-- Page Content -->
+    <main>
+      {{ content }}
+    </main>
+
   </div>
+
+  <!-- Footer Section -->
   {% include footer.html %}
+
 </body>
 </html>
