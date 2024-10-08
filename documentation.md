@@ -101,7 +101,7 @@ permalink: /documentation/
       The governance of the Data Exchange Framework is managed through a structured change management process that ensures all stakeholders have a say in major updates. This process is led by the chair and co-chair of the working group and involves member discussions, decision-making, and voting on changes.
     </p>
     <p class="mt-4">
-      For detailed information on the governance structure and change request process, visit the <a href="{{ '/governance/' | relative_url }}" class="text-blue-600 hover:text-blue-800">Governance and Change Management Page</a>.
+      For detailed information on the governance structure and change request process, visit the <a href="{{ '/change-management/' | relative_url }}" class="text-blue-600 hover:text-blue-800">Governance and Change Management Page</a>.
     </p>
   </div>
 
