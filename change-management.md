@@ -11,7 +11,7 @@ permalink: /change-management/
 
 <!-- Change Request Workflow Diagram -->
 <div class="mt-8 text-center">
-   <img src="/assets/images/change-approval-process.png" alt="Change Request Workflow" class="mx-auto border border-gray-300 rounded-lg shadow-lg max-w-full">
+  <img src="{{ '/assets/images/change-approval-process.png' | relative_url }}" alt="Change Request Workflow" class="mx-auto border border-gray-300 rounded-lg shadow-lg max-w-full">
 </div>
 
 <h2 class="text-xl font-semibold text-gray-800 mt-12">Steps in the Workflow</h2>
