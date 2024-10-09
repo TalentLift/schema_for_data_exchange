@@ -1,49 +1,49 @@
 # _data/marital_status_enum.yml
 
 - field: Single
-  description: ''
+  description: "A person who is not married and has never been married."
   notes: ''
 
 - field: Married
-  description: ''
+  description: "A person who is legally married to another individual."
   notes: ''
 
 - field: Divorced
-  description: ''
+  description: "A person who was previously married but is now legally separated from their spouse."
   notes: ''
 
 - field: Widowed
-  description: ''
+  description: "A person whose spouse has died and who has not remarried."
   notes: ''
 
 - field: Separated
-  description: ''
+  description: "A person who is still legally married but living apart from their spouse, often as a precursor to divorce."
   notes: ''
 
 - field: In civil union
-  description: ''
+  description: "A person in a legally recognized union similar to marriage, often for same-sex couples, but varying by jurisdiction."
   notes: ''
 
 - field: In domestic partnership
-  description: ''
+  description: "A person in a committed relationship with another individual, often recognized by local laws but without the full legal rights of marriage."
   notes: ''
 
 - field: Common law
-  description: ''
+  description: "A person living with a partner in a relationship considered equivalent to marriage by law, without a formal marriage certificate."
   notes: ''
 
 - field: Engaged
-  description: ''
+  description: "A person who has formally agreed to marry another individual."
   notes: ''
 
 - field: Complicated
-  description: ''
+  description: "A person in a relationship status that is difficult to define or involves multiple factors, such as on-and-off relationships."
   notes: ''
 
 - field: Other
-  description: ''
+  description: "A person whose marital status does not fit into any of the predefined categories."
   notes: ''
 
 - field: Prefer not to say
-  description: ''
+  description: "A person who chooses not to disclose their marital status."
   notes: ''
