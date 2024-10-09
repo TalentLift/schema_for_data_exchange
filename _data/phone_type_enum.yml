@@ -1,0 +1,41 @@
+# _data/phone_type_enum.yml
+
+- field: Mobile
+  description: "Mobile phone number, typically used for SMS and calls."
+  notes: ''
+
+- field: Landline
+  description: "Fixed line telephone number."
+  notes: ''
+
+- field: Fax
+  description: "Fax number for document transmission."
+  notes: ''
+
+- field: VoIP
+  description: "Voice over IP (VoIP) number used for internet-based calls."
+  notes: ''
+
+- field: WhatsApp
+  description: "WhatsApp phone number used for messaging and calls."
+  notes: ''
+
+- field: Telegram
+  description: "Telegram phone number used for messaging and calls."
+  notes: ''
+
+- field: Signal
+  description: "Signal phone number used for secure messaging and calls."
+  notes: ''
+
+- field: WeChat
+  description: "WeChat phone number used primarily for messaging, calls, and social interaction."
+  notes: ''
+
+- field: Skype
+  description: "Skype number used for calls and video conferencing."
+  notes: ''
+
+- field: Other
+  description: "Any other type of phone number not covered above."
+  notes: ''
