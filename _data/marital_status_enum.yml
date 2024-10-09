@@ -1,0 +1,49 @@
+# _data/marital_status_enum.yml
+
+- field: Single
+  description: ''
+  notes: ''
+
+- field: Married
+  description: ''
+  notes: ''
+
+- field: Divorced
+  description: ''
+  notes: ''
+
+- field: Widowed
+  description: ''
+  notes: ''
+
+- field: Separated
+  description: ''
+  notes: ''
+
+- field: In civil union
+  description: ''
+  notes: ''
+
+- field: In domestic partnership
+  description: ''
+  notes: ''
+
+- field: Common law
+  description: ''
+  notes: ''
+
+- field: Engaged
+  description: ''
+  notes: ''
+
+- field: Complicated
+  description: ''
+  notes: ''
+
+- field: Other
+  description: ''
+  notes: ''
+
+- field: Prefer not to say
+  description: ''
+  notes: ''
