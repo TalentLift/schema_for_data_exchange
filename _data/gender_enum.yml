@@ -1,21 +1,21 @@
 # _data/gender_enum.yml
 
 - field: Male
-  description: ''
+  description: "A person who identifies as male."
   notes: ''
 
 - field: Female
-  description: ''
+  description: "A person who identifies as female."
   notes: ''
 
 - field: Non-binary
-  description: ''
+  description: "A person who identifies outside the traditional male and female binary. This can include identities such as genderqueer, genderfluid, and others."
   notes: ''
 
 - field: Other
-  description: ''
+  description: "A person whose gender identity does not fit into the predefined categories of male, female, or non-binary."
   notes: ''
 
 - field: Prefer not to say
-  description: ''
+  description: "A person who chooses not to disclose their gender identity."
   notes: ''
